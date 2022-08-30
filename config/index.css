@@ -1,0 +1,271 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Optima,Segoe,Segoe UI,Candara,Calibri,Arial,sans-serif;
+    background-color: #1c1c2f;
+}
+
+header{
+    display: flex;
+    padding: 20px;
+}
+
+header div.header-container{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #d1d5db;
+    gap: 15px;
+    font-size: 1.25rem;
+    cursor: pointer;
+    min-width: min-content;
+}
+
+header div.header-container img{
+    border-radius: 50%;
+}
+
+header div.header-container a:hover{
+    color: rgb(147,197,253);
+}
+
+header div.header-container div.header-profile svg:hover{
+    color: rgb(147,197,253);
+}
+
+header div.header-container a:hover:nth-child(3){
+    color: rgba(245,158,11);
+}
+
+header div.header-container:nth-child(2) img:nth-child(3){
+    margin-right: 10px;
+}
+
+header div.header-container div.header-profile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    color: #d1d5db;
+}
+
+header div.header-container div.header-profile img{
+    background-color: #2b2c4a;
+}
+
+header div.header-container a{
+    color: #d1d5db;
+    transition: all 0.2s linear;
+    text-decoration: none;
+}
+
+header div.header-container svg{
+    width: 20px;
+    height: 20px;
+    padding: 7px;
+    background-color: #2b2c4a;
+    border-radius: 50%;
+    transition: all 0.2s linear;
+}
+
+header div.header-container svg:hover{
+    background-color: rgba(51,52,87);
+}
+
+header div.header-container div.header-profile svg{
+    position: relative;
+    top: 3px;
+    width: 15px;
+    height: 15px;
+    padding: 0px;
+    background-color: transparent;
+    transition: all 0.2s linear;
+}
+
+div.first{
+    padding-top: 70px;
+    display: flex;
+    align-items: center;
+    min-height: 365px;
+    flex-direction: column;
+    gap: 15px;
+}
+
+div.first h1{
+    font-size: 70px;
+    color: #f3f4f6;
+}
+
+div.first p{
+    font-size: 23px;
+    color: #9ca3af;
+    display: block;
+    width: 40%;
+    text-align: center;
+    min-width: 350px;
+}
+
+div.first div{
+    margin-top: 20px;
+}
+
+div.first div a{
+    color: #000000;
+    background-color: #60a5fa;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    font-size: 23px;
+    transition: transform 0.3s;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+div.first div a:nth-child(2){
+    color: #f3f4f6;
+    background-color: #2b2c4a;
+}
+
+div.first div a:hover{
+    transform: scale(1.1);
+}
+
+div.second{
+    background-color: #141421;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 100px;
+    gap: 70px;
+    padding: 60px 0px;
+}
+
+div.second *{
+    background-color: #141421;
+}
+
+div.second div{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+    row-gap: 50px;
+}
+
+div.second div:nth-child(even){
+    flex-wrap: wrap-reverse;
+}
+
+div.second div div{
+    width: 90%;
+    max-width: 700px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+div.second div div h2{
+    color: #f3f4f6;
+    font-size: 30px;
+    display: block;
+    max-width: 500px;
+}
+
+div.second div div p{
+    color: #9ca3af;
+    font-size: 18px;
+    display: block;
+    max-width: 500px;
+}
+
+div.second div div img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+footer{
+    display: flex;
+    justify-content: left;
+    padding: 50px 160px 50px 160px;
+    width: calc(100% - 160px * 2);
+}
+
+footer div div img{
+    border-radius: 50%;
+}
+
+footer div div h3{
+    color: #f3f4f6;
+    font-size: 25px;
+    font-weight: normal;
+}
+
+footer div div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+footer div p{
+    color: #9ca3af;
+}
+
+footer div{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+    header{
+        justify-content: center;
+    }
+
+    div.header-container:nth-child(2){
+        display: none;
+    }
+}
+
+@media screen and (max-width: 745px) {
+    footer{
+        padding: 50px 0px;
+        justify-content: center;
+        width: 100%;
+    }
+
+    footer div{
+        justify-content: center;
+    }
+
+    footer div p{
+        font-size: 14px;
+        text-align: center;
+    }
+
+    div.first p{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    html body header div.header-container img{
+        width: 50px;
+        height: 50px;
+    }
+
+    header div.header-container a{
+        font-size: 16px;
+    }
+
+    header div.header-container{
+        gap: 13px;
+    }
+}
